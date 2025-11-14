@@ -11,8 +11,7 @@ public class Produit {
         this.taxe = taxe;
     }
     public double prixTtc(){
-        double result = prixHt + (prixHt*(taxe/100));
-        return result;
+        return prixHt + (prixHt*((double) taxe / 100));
     }
     public void afficher(){
         System.out.println("le produit: " + nom + " coûte: " + prixTtc() + " euros TTC");
